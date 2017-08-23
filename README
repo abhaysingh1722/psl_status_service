@@ -1,1 +1,5 @@
-TODO: Add contents for README
+Follow these steps:-
+
+1.Type 'npm test' to run the code
+2.Open the browser to access http://localhost:8080
+3.The table will be displayed
