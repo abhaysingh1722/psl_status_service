@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Daily Status Updates</title>
+        <style>
+            table, td, th {    
+                border: 1px solid #ddd;
+                text-align: left;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            table,th, td {
+                border: 1px solid black;
+                padding: 10px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>User</th>
+                <th>What did you do yesterday?</th>
+                <th>What do you plan to do today?</th>
+                <th>Is there any blocker?</th>
+            </tr>
+            
+            <% for(var i=0; i < data.length; i++) { %>
+                <tr>
+                    <td><%= data[i].user %></td>
+                    <td><%= data[i].answer1 %></td>
+                    <td><%= data[i].answer2 %></td>
+                    <td><%= data[i].answer3 %></td>
+                </tr>
+            <% } %>
+            
+        </table>
+    </body>
+</html>

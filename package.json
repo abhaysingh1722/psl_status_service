@@ -2,13 +2,13 @@
   "name": "slack",
   "version": "8.3.1",
   "description": "Slack API client written in JS",
-  "main": "methods/index",
+  "main": "app.js",
   "browser": {
     "./methods/rtm.client.js": "./methods/rtm.client-browser.js",
     "./test/_env.js": "./test/_env-browser.js"
   },
   "scripts": {
-    "test": "babel-node --presets es2015 test/channels.history-test.js  &&  babel-node --presets es2015 test/users.list-test.js  && babel-node --presets es2015 test/channels.list-test.js "
+    "test": "babel-node --presets es2015 test/channels.history-test.js  &&  babel-node --presets es2015 test/users.list-test.js  && babel-node --presets es2015 test/channels.list-test.js && node app.js"
   },
   "repository": {
     "type": "git",
@@ -49,6 +49,8 @@
   },
   "dependencies": {
     "JSON": "^1.0.0",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
     "fs": "0.0.1-security",
     "tiny-json-http": "^5.1.0",
     "ws": "^1.1.4"
