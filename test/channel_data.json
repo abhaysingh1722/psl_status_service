@@ -1,0 +1,33 @@
+{
+	"ok": true,
+	"messages": [
+		{
+			"type": "message",
+			"user": "U6GUQR20Z",
+			"text": "<@U6HCSBNUB>",
+			"bot_id": "B6HGRV1L4",
+			"attachments": [
+				{
+					"text": "Table Completion",
+					"footer": "for \"What did you do yesterday?\"",
+					"id": 1,
+					"fallback": "Table Completion"
+				},
+				{
+					"text": "Code Shrinking",
+					"footer": "for \"What do you plan to do today?\"",
+					"id": 2,
+					"fallback": "Code Shrinking"
+				},
+				{
+					"text": "Nope",
+					"footer": "for \"Is there any blocker?\"",
+					"id": 3,
+					"fallback": "Nope"
+				}
+			],
+			"ts": "1503466284.000087"
+		}
+	],
+	"has_more": false
+}
