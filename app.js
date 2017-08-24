@@ -18,7 +18,7 @@ app.get('/', function(req, res) {
     members.forEach(function(obj1){
         temp = {}
         userList.members.forEach(function(obj2){
-            if(obj2.id == obj1 && (obj1 != "U6GUQR20Z") &&  (obj1 != "U6GUWQ1GR")){
+            if(obj2.id == obj1 && (obj1 != "U6GUQR20Z")){
                 temp['user'] = obj2.real_name;
 
                 obj.messages.forEach(function(obj3){

@@ -8,7 +8,7 @@
     "./test/_env.js": "./test/_env-browser.js"
   },
   "scripts": {
-    "test": "babel-node --presets es2015 test/channels.history-test.js  &&  babel-node --presets es2015 test/users.list-test.js  && babel-node --presets es2015 test/channels.list-test.js && node app.js"
+    "start": "babel-node --presets es2015 test/channels.history-test.js  &&  babel-node --presets es2015 test/users.list-test.js  && babel-node --presets es2015 test/channels.list-test.js && node app.js"
   },
   "repository": {
     "type": "git",
