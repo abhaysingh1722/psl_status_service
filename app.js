@@ -48,6 +48,6 @@ app.get('/report', function(req, res) {
     res.render('index', {'data': data});
 });
 
-app.listen(8080,function(){
-    console.log('Server hosted at 8080!!');
-});
+app.listen(3000, '0.0.0.0', function() {
+    console.log('Listening to port:  ' + 3000);
+}); 

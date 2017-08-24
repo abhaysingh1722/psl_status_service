@@ -38,9 +38,12 @@
 			"real_name": ""
 		},
 		{
+			"id": "U6U4Q2BEK"
+		},
+		{
 			"id": "USLACKBOT",
 			"real_name": "slackbot"
 		}
 	],
-	"cache_ts": 1503551825
+	"cache_ts": 1503566155
 }
