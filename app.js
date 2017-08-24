@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 app.set('view engine', 'ejs');
 
-app.get('/report', function(req, res) {
+app.get('/', function(req, res) {
     var obj  = require('./channel_data.json')
     var userList  = require('./users_list.json')
     var channelList  = require('./channel_list.json')
@@ -48,6 +48,6 @@ app.get('/report', function(req, res) {
     res.render('index', {'data': data});
 });
 
-app.listen(3000, '0.0.0.0', function() {
+app.listen(3000, function() {
     console.log('Listening to port:  ' + 3000);
 }); 
