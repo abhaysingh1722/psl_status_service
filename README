@@ -1,5 +1,14 @@
 Follow these steps:-
 
-1.Type 'npm start' to run the code
-2.Open the browser to access http://localhost:8080
-3.The table will be displayed
+1.Install Node.js on your system using 'sudo apt-get install nodejs' and Node package manager using 'sudo apt-get install npm' and check whether installed by typing 'node -v' and 'npm -v'.
+2.In the root directory, type the command 'npm i slack'.
+3.Navigate to the slack folder and type 'npm install' to install all the dependencies.
+4.Create a file called .env in the root with the following:
+SLACK_TOKEN=xxxx
+SLACK_BOT_TOKEN=xxxx
+SLACK_CLIENT_ID=xxxx
+SLACK_CLIENT_SECRET=xxxx
+You need to register an app for a SLACK_CLIENT_ID and SLACK_CLIENT_SECRET. 
+5.Type 'npm start' to run the code
+6.Open the browser to access http://localhost:8080
+7.The table will be displayed.
