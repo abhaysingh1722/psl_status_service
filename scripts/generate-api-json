@@ -3,7 +3,7 @@ var cheerio = require('cheerio')
 var async = require('async')
 var req = require('request')
 var url = 'http://api.slack.com/methods'
-
+//var fs = require('fs');
 function getMethods(callback) {
   req(url, (err, res)=> {
     var $ = cheerio.load(res.body)

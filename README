@@ -12,7 +12,7 @@ For SLACK_TOKEN: access https://api.slack.com/custom-integrations/legacy-tokens
 For SLACK_BOT_TOKEN:-access https://my.slack.com/services/new/bot
                     -create a new bot and get its token(starts with xoxb)                     
 For SLACK_CLIENT_ID and SLACK_CLIENT_SECRET:- Register an app through https://api.slack.com/apps
-					- Click on "Create new app" and get the Client id and Client secret after creating.
+- Click on "Create new app" and get the Client id and Client secret after creating.
 5.Type 'npm start' to run the code
 6.Open the browser to access http://localhost:3000
 7.The table will be displayed.

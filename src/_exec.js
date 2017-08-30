@@ -9,6 +9,10 @@ export default function exec(url, form, callback) {
     }
   })
 
+  //var url2=`https://slack.com/api/${url}`
+  //console.log(url2)
+  //console.log(form)
+
   // always post
   http.post({
     url: `https://slack.com/api/${url}`,
@@ -28,6 +32,7 @@ export default function exec(url, form, callback) {
     }
     else {
       callback(null, res.body)
+      //console.log(res.body)
     }
   })
 }

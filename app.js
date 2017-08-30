@@ -1,4 +1,4 @@
-var express = require('express');
+    var express = require('express');
 var app = express();
 app.set('view engine', 'ejs');
 
@@ -10,7 +10,7 @@ app.get('/', function(req, res) {
     var members = []
 
     channelList.channels.forEach(function(entity){
-        if(entity.name == "daily_status"){
+        if(entity.name == process.env.CHANNEL_NAME){
             members = entity.members;
         }
     });
