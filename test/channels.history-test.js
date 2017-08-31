@@ -22,6 +22,7 @@ test('can get history', t=> {
   //     // get the history for the first one
   //     let channel = json.channels.filter(c=> c.name === 'daily_status')[0].id
   let channel = process.env.CHANNEL_ID
+  //console.log(process.env)
   let params = {token, channel, count}
   history(params, (err, data)=> {
     if (err) {
