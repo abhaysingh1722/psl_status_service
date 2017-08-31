@@ -3,7 +3,7 @@ Follow these steps:-
 1.Install Node.js on your system using 'sudo apt-get install nodejs' and Node package manager using 'sudo apt-get install npm' and check whether installed by typing 'node -v' and 'npm -v'.
 2.In the root directory, type the command 'npm i slack'.
 3.Navigate to the slack folder and type 'npm install' to install all the dependencies.
-4.Create a file called .env in the root with the following:
+4.Create a file called .env in the root and in the test folder with the following data:
 SLACK_TOKEN=xxxx
 SLACK_BOT_TOKEN=xxxx
 SLACK_CLIENT_ID=xxxx
