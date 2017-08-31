@@ -5,11 +5,11 @@ app.set('view engine', 'ejs');
 app.get('/', function(req, res) {
     var obj  = require('./channel_data.json')
     var userList  = require('./users_list.json')
-    var channelList  = require('./channel_list.json')
+    var channelInfo  = require('./channel_info.json')
     var data = []
     var members = []
 
-    channelList.channels.forEach(function(entity){
+    channelInfo.channel.forEach(function(entity){
         if(entity.name == process.env.CHANNEL_NAME){
             members = entity.members;
         }
@@ -18,7 +18,7 @@ app.get('/', function(req, res) {
     members.forEach(function(obj1){
         temp = {}
         userList.members.forEach(function(obj2){
-            if(obj2.id == obj1 && (obj1 != "U6GUQR20Z")){
+            if(obj2.id == obj1 && (obj1 != process.env.DAILYUPDATES_CHANNEL_ID)){
                 temp['user'] = obj2.real_name;
 
                 obj.messages.forEach(function(obj3){
